@@ -61,21 +61,29 @@ body {
     display: flex;
     height: 40px;
     width: 620px;
-    background-color: aqua;
     border-radius: 4px;
+    border: 2px solid transparent;
+}
+.nav-search:hover{
+    border: 2px solid rgb(255, 174, 0);
 }
 
 .search-select {
-    text-align: center;
+    /* text-align: center; */
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     width: 50px;
+    padding-left: 9px;
 }
 
-.seach-amazon {
+.search-amazon {
     width: 100%;
 }
 
+.search-amazon:focus{
+    outline: none;
+
+}
 .search-icon {
     width: 45px;
     background-color: rgb(255, 174, 0);
@@ -84,6 +92,7 @@ body {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     align-items: center;
+    pointer-events:none;
 }
 
 /* box1 */
@@ -360,4 +369,21 @@ ul a {
 .para-para a{
     text-decoration: none;
     color: rgb(255, 174, 0);
+}
+.para-para a:hover{
+    opacity: 0.8;
+}
+.border{
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding: 10px;
+}
+.border:hover{
+    border: 1px solid white;
+}
+.border-logo{
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding: 3px;
+}
+.border-logo:hover{
+    border: 1px solid white;
 }
